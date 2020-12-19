@@ -1,0 +1,118 @@
+2020-12-08 20:41:23,617 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:79]
+2020-12-08 20:43:10,589 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:79]
+2020-12-08 20:53:41,967 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:79]
+2020-12-08 20:53:51,579 ERROR: Exception on /index [GET] [in c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Ijaz Bacha\project\microblog1\app\main\routes.py", line 38, in index
+    page, current_app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2020-12-08 20:55:44,882 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:79]
+2020-12-08 20:55:46,996 ERROR: Exception on /index [GET] [in c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Ijaz Bacha\project\microblog1\app\main\routes.py", line 38, in index
+    page, current_app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2020-12-08 20:56:07,074 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:79]
+2020-12-09 12:50:41,031 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:84]
+2020-12-09 12:51:00,102 ERROR: Exception on / [GET] [in c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Ijaz Bacha\project\microblog1\app\main\routes.py", line 44, in index
+    return render_template('index.html', title=_('Home'), form=form,
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Ijaz Bacha\project\microblog1\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Ijaz Bacha\project\microblog1\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "C:\Users\Ijaz Bacha\project\microblog1\app\templates\base.html", line 26, in block "navbar"
+    action="{{ url_for('main.search') }}">
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main.search'. Did you mean 'main.user' instead?
+2020-12-09 12:59:23,279 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:84]
+2020-12-09 13:05:12,653 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:84]
+2020-12-09 13:05:31,222 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:84]
+2020-12-09 13:21:36,133 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:84]
+2020-12-09 13:26:17,498 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 19:36:06,135 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 19:47:02,301 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 19:58:22,242 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 20:03:36,725 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 20:04:29,226 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 20:05:44,115 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 20:08:05,476 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 20:11:41,557 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 20:14:55,955 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 20:16:19,884 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 20:18:40,524 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:86]
+2020-12-09 20:20:56,535 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:85]
+2020-12-09 20:22:14,124 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:84]
+2020-12-09 20:30:06,437 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:84]
+2020-12-09 20:55:25,429 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:84]
+2020-12-09 20:56:45,076 INFO: Microblog startup [in C:\Users\Ijaz Bacha\project\microblog1\app\__init__.py:84]

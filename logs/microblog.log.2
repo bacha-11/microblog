@@ -1,0 +1,89 @@
+2020-12-09 21:55:59,303 ERROR: Exception on /index [GET] [in c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "C:\Users\Ijaz Bacha\project\microblog1\app\main\routes.py", line 15, in before_request
+    if current_user.is_authenticated:
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_login\utils.py", line 346, in _get_user
+    current_app.login_manager._load_user()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_login\login_manager.py", line 318, in _load_user
+    user = self._user_callback(user_id)
+  File "C:\Users\Ijaz Bacha\project\microblog1\app\models.py", line 140, in load_user
+    return User.query.get(int(id))
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 512, in __get__
+    mapper = orm.class_mapper(type)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\base.py", line 451, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\base.py", line 430, in _inspect_mapped_class
+    mapper._configure_all()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\mapper.py", line 1352, in _configure_all
+    configure_mappers()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\mapper.py", line 3299, in configure_mappers
+    mapper._post_configure_properties()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\mapper.py", line 1965, in _post_configure_properties
+    prop.init()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\interfaces.py", line 197, in init
+    self.do_init()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\relationships.py", line 2076, in do_init
+    self._process_dependent_arguments()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\relationships.py", line 2105, in _process_dependent_arguments
+    setattr(self, attr, attr_value())
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\ext\declarative\clsregistry.py", line 326, in __call__
+    x = eval(self.arg, globals(), self._dict)
+  File "<string>", line 1, in <module>
+AttributeError: 'Table' object has no attribute 'sender_id'
+2020-12-09 21:56:05,873 ERROR: Exception on /explore [GET] [in c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "C:\Users\Ijaz Bacha\project\microblog1\app\main\routes.py", line 15, in before_request
+    if current_user.is_authenticated:
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_login\utils.py", line 346, in _get_user
+    current_app.login_manager._load_user()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_login\login_manager.py", line 318, in _load_user
+    user = self._user_callback(user_id)
+  File "C:\Users\Ijaz Bacha\project\microblog1\app\models.py", line 140, in load_user
+    return User.query.get(int(id))
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 512, in __get__
+    mapper = orm.class_mapper(type)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\base.py", line 451, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\base.py", line 430, in _inspect_mapped_class
+    mapper._configure_all()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\mapper.py", line 1352, in _configure_all
+    configure_mappers()
+  File "c:\users\ijaz bacha\project\microblog1\venv\lib\site-packages\sqlalchemy\orm\mapper.py", line 3295, in configure_mappers
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class User->user'. Original exception was: 'Table' object has no attribute 'sender_id'
